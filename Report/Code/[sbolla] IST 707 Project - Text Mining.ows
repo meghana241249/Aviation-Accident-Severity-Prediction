@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(108.0, 261.0)" />
+		<node id="1" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(253.0, 261.0)" />
+		<node id="2" name="Bag of Words" qualified_name="orangecontrib.text.widgets.owbagofwords.OWTBagOfWords" project_name="Orange3-Text" version="" title="Bag of Words" position="(409.0, 261.0)" />
+		<node id="3" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud" position="(558.0, 183.0)" />
+		<node id="4" name="Topic Modelling" qualified_name="orangecontrib.text.widgets.owtopicmodeling.OWTopicModeling" project_name="Orange3-Text" version="" title="Topic Modelling" position="(561.0, 339.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+		<link id="3" source_node_id="2" sink_node_id="4" source_channel="Corpus" sink_channel="Corpus" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVfgIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojC8v
+L21hYy9Ib21lL0Rlc2t0b3AvSVNUIDcwNy9UZXh0L3RleHRfbWluaW5nLmNzdpSMEWJvb2stZXhj
+ZXJwdHMudGFilIwYZ3JpbW0tdGFsZXMtc2VsZWN0ZWQudGFilIwYZWxlY3Rpb24tdHdlZXRzLTIw
+MTYudGFilIwXZnJpZW5kcy10cmFuc2NyaXB0cy50YWKUjAxhbmRlcnNlbi50YWKUZYwTc2F2ZWRX
+aWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABxgAAAOUAAAN5AAACLgAAAccAAAECAAADeAAAAi0A
+AAAAAAAAAAS6AAABxwAAAQIAAAN4AAACLZSMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRp
+bmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVz
+lH2UKIwOdGl0bGVfdmFyaWFibGWUjElPY2N1cnJlbmNlX0Rlc2NyaXB0aW9uLGZpbmRpbmdfZGVz
+Y3JpcHRpb24sbmFycl9hY2NwLG5hcnJfYWNjZixuYXJyX2NhdXNllEtnhpSMCnVzZWRfYXR0cnOU
+XZRoF0tnhpRhSv3///+GlGgMSwF1jAphdHRyaWJ1dGVzlH2UjAVtZXRhc5R9lGgXSwNzdWJoESmB
+lH2UKGgUfZQoaBZOSv7///+GlGgZXZSMBFRleHSUS2eGlGFK/f///4aUaAxLAXVoHX2UjAhDYXRl
+Z29yeZRLAXNoH32UaCZLA3N1YmV1Lg==
+</properties>
+		<properties node_id="1" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xbc\x00\x00\x00[\x00\x00\x03\xe3\x00\x00\x02l\x00\x00\x00\xbd\x00\x00\x00x\x00\x00\x03\xe2\x00\x00\x02k\x00\x00\x00\x00\x00\x00\x00\x00\x04\xba\x00\x00\x00\xbd\x00\x00\x00x\x00\x00\x03\xe2\x00\x00\x02k', 'storedsettings': {'name': '', 'preprocessors': [('preprocess.transform', {'methods': [0, 1, 2, 3]}), ('preprocess.tokenize', {'method': 3, 'pattern': '\\w{4,}'}), ('preprocess.normalize', {'lemmagen_language': 'English', 'method': 2, 'snowball_language': 'English', 'udpipe_language': 'English', 'udpipe_tokenizer': False}), ('preprocess.filter', {'abs_end': 10, 'abs_start': 1, 'freq_type': 0, 'incl_num': True, 'invalidated': False, 'language': 'English', 'lx_list': [], 'lx_path': None, 'methods': [0, 2, 3], 'n_tokens': 100, 'pattern': '\\.|,|:|;|!|\\?|\\(|\\)|\\||\\+|\\\'|\\"|‘|’|“|”|\\\'|\\’|…|\\-|–|—|\\$|&amp;|\\*|&gt;|&lt;|\\/|\\[|\\]|according|additional|examination', 'pos_tags': 'NOUN,VERB', 'rel_end': 0.9, 'rel_start': 0.1, 'sw_list': [], 'sw_path': None})]}, '__version__': 3}</properties>
+		<properties node_id="2" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'hidden_cb': True, 'normalization': '(None)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\xd6\x00\x00\x00\xe5\x00\x00\x02\xe3\x00\x00\x01\xc3\x00\x00\x01\xd7\x00\x00\x01\x02\x00\x00\x02\xe2\x00\x00\x01\xc2\x00\x00\x00\x00\x00\x00\x00\x00\x04\xba\x00\x00\x01\xd7\x00\x00\x01\x02\x00\x00\x02\xe2\x00\x00\x01\xc2', 'wglobal': '(None)', 'wlocal': 'Sublinear', '__version__': 1}</properties>
+		<properties node_id="3" format="pickle">gASVtwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAAZAAAADwAAA54AAAJ/AAAAGgAAACwAAAOdAAACfgAAAAAAAAAABLoAAAAa
+AAAALAAAA50AAAJ+lIwOc2VsZWN0ZWRfd29yZHOUj5SMC3dvcmRzX2NvbG9ylIiMCndvcmRzX3Rp
+bHSUSwCMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="4" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'method_index': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x80\x00\x00\x00[\x00\x00\x04D\x00\x00\x02l\x00\x00\x00\x81\x00\x00\x00x\x00\x00\x04C\x00\x00\x02k\x00\x00\x00\x00\x00\x00\x00\x00\x04\xba\x00\x00\x00\x81\x00\x00\x00x\x00\x00\x04C\x00\x00\x02k', 'selection': None, 'hdp': {'K': 15, 'T': 150, 'alpha': 1, 'eta': 0.01, 'gamma': 1, 'kappa': 1, 'tau': 64}, 'lda': {'num_topics': 10}, 'lsi': {'num_topics': 10}, 'nmf': {'num_topics': 10}, '__version__': 1, 'context_settings': []}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
